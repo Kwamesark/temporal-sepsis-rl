@@ -40,3 +40,24 @@ __pycache__/
 venv/
 .venv/
 conda-env/
+
+# Nested project outputs inside scripts/
+scripts/data/
+scripts/results/
+scripts/results_5seed/
+scripts/results_ablation/
+scripts/figures/
+scripts/figures_ablation/
+scripts/logs/
+scripts/logs_5seed/
+scripts/logs_ablation/
+scripts/models/
+scripts/models_5seed/
+scripts/models_ablation/
+scripts/offline_dataset_env_aligned/
+scripts/cql_results_seed*/
+scripts/cql_evaluation_results_seed*/
+scripts/new/cql_results_env_aligned/
+scripts/new/results/
+scripts/new/__pycache__/
+scripts/new/README_ablation.md
