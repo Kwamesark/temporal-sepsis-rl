@@ -1,0 +1,64 @@
+# Data files
+data/
+*.csv
+*.npz
+*.pkl
+*.parquet
+*.xlsx
+
+# Models and checkpoints
+models/
+models_5seed/
+models_ablation/
+*.zip
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+logs/
+logs_5seed/
+logs_ablation/
+runs/
+tensorboard/
+
+# Results with possible sensitive outputs
+results/
+results_5seed/
+results_ablation/
+cql_results_seed*/
+cql_evaluation_results_seed*/
+offline_dataset_env_aligned/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+.venv/
+conda-env/
+
+# Nested project outputs inside scripts/
+scripts/data/
+scripts/results/
+scripts/results_5seed/
+scripts/results_ablation/
+scripts/figures/
+scripts/figures_ablation/
+scripts/logs/
+scripts/logs_5seed/
+scripts/logs_ablation/
+scripts/models/
+scripts/models_5seed/
+scripts/models_ablation/
+scripts/offline_dataset_env_aligned/
+scripts/cql_results_seed*/
+scripts/cql_evaluation_results_seed*/
+scripts/new/cql_results_env_aligned/
+scripts/new/results/
+scripts/new/__pycache__/
+scripts/new/README_ablation.md
+scripts/old/
