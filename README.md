@@ -35,6 +35,35 @@ Users must obtain their own access to MIMIC-IV and follow all PhysioNet data use
 
 This project is currently in progress. The codebase is being organized for reproducibility, and the manuscript is still under development.
 
+## Project Workflow
+
+The main workflow is organized in `scripts/new/`:
+
+1. Extract temporal ICU trajectories  
+   `extract_trajectories.py`
+
+2. Train PPO and A2C baselines  
+   `train_rl_agent.py`  
+   `train_a2c_agent.py`
+
+3. Prepare offline CQL dataset  
+   `prepare_offline_dataset_env_aligned.py`
+
+4. Train offline CQL baseline  
+   `train_cql_agent.py`
+
+5. Evaluate PPO, A2C, and CQL  
+   `evaluate_ppo_a2c_agents.py`  
+   `evaluate_cql_agent.py`
+
+6. Analyze treatment-action behavior  
+   `analyze_actions.py`  
+   `compare_rl_baselines.py`
+
+7. Run PPO ablation study  
+   `train_ppo_ablation.py`  
+   `evaluate_ppo_ablation.py`
+
 ## Repository Structure
 
 ```text
